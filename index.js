@@ -17,7 +17,8 @@ app.post("/predict", async (req, res) => {
 
   try {
     const response = await axios.post(
-      "https://router.huggingface.co/hf-inference/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      // "https://router.huggingface.co/hf-inference/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "https://router.huggingface.co/hf-inference/models/cardiffnlp/twitter-roberta-base-sentiment-latest",
       { inputs: text },
       {
         headers: {
